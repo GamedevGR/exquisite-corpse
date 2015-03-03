@@ -2,9 +2,9 @@ ExquisiteCorpse
 ===============
 A microgame runner.
 
-[![Build Status](http://img.shields.io/travis/gamedevgr/exquisite-corpse/master.svg)](https://travis-ci.org/gamedevgr/exquisite-corpse)
-[![Coverage Status](http://img.shields.io/coveralls/gamedevgr/exquisite-corpse/master.svg)](https://coveralls.io/r/gamedevgr/exquisite-corpse)
-[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/gamedevgr/exquisite-corpse.svg)](https://scrutinizer-ci.com/g/gamedevgr/exquisite-corpse/?branch=master)
+[![Build Status](http://img.shields.io/travis/GamedevGR/exquisite-corpse/master.svg)](https://travis-ci.org/GamedevGR/exquisite-corpse)
+[![Coverage Status](http://img.shields.io/coveralls/GamedevGR/exquisite-corpse/master.svg)](https://coveralls.io/r/GamedevGR/exquisite-corpse)
+[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/GamedevGR/exquisite-corpse.svg)](https://scrutinizer-ci.com/g/GamedevGR/exquisite-corpse/?branch=master)
 [![PyPI Version](http://img.shields.io/pypi/v/ExquisiteCorpse.svg)](https://pypi.python.org/pypi/ExquisiteCorpse)
 [![PyPI Downloads](http://img.shields.io/pypi/dm/ExquisiteCorpse.svg)](https://pypi.python.org/pypi/ExquisiteCorpse)
 
