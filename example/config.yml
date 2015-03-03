@@ -4,10 +4,10 @@ games:
   rev: example-1
   build:
     mac: "echo 1"
-    windows: null
+    win: null
   run:
     mac: python3 example_1.py
-    linux: ./example_1.py
+    nix: ./example_1.py
 # examples with only the required fields
 - url: http://gamedevgr/exquisite-corpse
   rev: example-2

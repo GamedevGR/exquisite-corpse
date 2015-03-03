@@ -4,6 +4,8 @@
 
 import sys
 
+from .types import Config
+
 
 def main(args=None):
     """Process command-line arguments and run the program."""
@@ -17,7 +19,10 @@ def main(args=None):
 
 def run(path):
     """Run the program."""
-    print(path)
+    config = Config(path)
+    print(config)
+    for game in config.games:
+        print(game)
 
 
 if __name__ == '__main__':  # pragma: no cover (manual test)

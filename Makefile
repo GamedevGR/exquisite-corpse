@@ -81,7 +81,7 @@ ci: check test tests
 
 .PHONY: run
 run: env
-	$(BIN)/ec examples/config.yml
+	$(BIN)/ec example/config.yml
 
 # Development Installation ###################################################
 
