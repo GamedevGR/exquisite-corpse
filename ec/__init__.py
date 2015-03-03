@@ -5,7 +5,9 @@ import sys
 __project__ = 'ExquisiteCorpse'
 __version__ = '0.0.0'
 
+CLI = 'ec'
 VERSION = __project__ + '-' + __version__
+DESCRIPTION = "A microgame runner."
 
 PYTHON_VERSION = 3, 3
 

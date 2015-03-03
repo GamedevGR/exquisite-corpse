@@ -4,7 +4,7 @@
 
 import setuptools
 
-from ec import __project__, __version__
+from ec import __project__, __version__, CLI, DESCRIPTION
 
 import os
 if os.path.exists('README.rst'):
@@ -18,14 +18,14 @@ setuptools.setup(
     name=__project__,
     version=__version__,
 
-    description="A microgame runner.",
+    description=DESCRIPTION,
     url='https://github.com/gamedevgr/exquisite-corpse',
     author='Jace Browning',
     author_email='jacebrowning@gmail.com',
 
     packages=setuptools.find_packages(),
 
-    entry_points={'console_scripts': []},
+    entry_points={'console_scripts': [CLI + ' = ec.cli:main']},
 
     long_description=(README + '\n' + CHANGES),
     license='MIT',

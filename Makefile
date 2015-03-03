@@ -9,8 +9,8 @@ ifndef TEST_RUNNER
 	# options are: nose, pytest
 	TEST_RUNNER := pytest
 endif
-UNIT_TEST_COVERAGE := 100
-INTEGRATION_TEST_COVERAGE := 100
+UNIT_TEST_COVERAGE := 57
+INTEGRATION_TEST_COVERAGE := 57
 
 # Project settings
 PROJECT := ExquisiteCorpse
@@ -78,6 +78,10 @@ $(ALL): $(SOURCES)
 
 .PHONY: ci
 ci: check test tests
+
+.PHONY: run
+run: env
+	$(BIN)/ec examples/config.yml
 
 # Development Installation ###################################################
 
