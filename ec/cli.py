@@ -20,9 +20,9 @@ def main(args=None):
 def run(path):
     """Run the program."""
     config = Config(path)
-    print(config)
+    print(repr(config))
     for game in config.games:
-        print(game)
+        print(repr(game))
 
 
 if __name__ == '__main__':  # pragma: no cover (manual test)
