@@ -3,9 +3,9 @@
 import yorm
 
 
-@yorm.map_attr(mac=yorm.standard.String)
-@yorm.map_attr(win=yorm.standard.String)
-@yorm.map_attr(nix=yorm.standard.String)
+@yorm.attr(mac=yorm.standard.String)
+@yorm.attr(win=yorm.standard.String)
+@yorm.attr(nix=yorm.standard.String)
 class Instructions(yorm.extended.AttributeDictionary):
 
     """Collection of OS-specific shell commands."""
@@ -17,10 +17,10 @@ class Instructions(yorm.extended.AttributeDictionary):
         self.nix = nix
 
 
-@yorm.map_attr(url=yorm.standard.String)
-@yorm.map_attr(rev=yorm.standard.String)
-@yorm.map_attr(build=Instructions)
-@yorm.map_attr(run=Instructions)
+@yorm.attr(url=yorm.standard.String)
+@yorm.attr(rev=yorm.standard.String)
+@yorm.attr(build=Instructions)
+@yorm.attr(run=Instructions)
 class Game(yorm.extended.AttributeDictionary):
 
     """Game's clone, build, and run instructions."""
@@ -39,14 +39,14 @@ class Game(yorm.extended.AttributeDictionary):
         return "'{u}' @ {r}".format(u=self.url, r=self.rev)
 
 
-@yorm.map_attr(all=Game)
+@yorm.attr(all=Game)
 class Games(yorm.container.List):
 
     """List of games."""
 
 
-@yorm.map_attr(games=Games)
-@yorm.store_instances("{self.path}")
+@yorm.attr(games=Games)
+@yorm.sync("{self.path}")
 class Config:
 
     """Configuration file for games to run."""
