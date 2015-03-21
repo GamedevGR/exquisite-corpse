@@ -9,8 +9,8 @@ ifndef TEST_RUNNER
 	# options are: nose, pytest
 	TEST_RUNNER := pytest
 endif
-UNIT_TEST_COVERAGE := 57
-INTEGRATION_TEST_COVERAGE := 57
+UNIT_TEST_COVERAGE := 58
+INTEGRATION_TEST_COVERAGE := 58
 
 # Project settings
 PROJECT := ExquisiteCorpse
