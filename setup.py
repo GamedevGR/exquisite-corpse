@@ -19,7 +19,7 @@ setuptools.setup(
     version=__version__,
 
     description=DESCRIPTION,
-    url='https://github.com/gamedevgr/exquisite-corpse',
+    url='https://github.com/jacebrowning/exquisite-corpse',
     author='Jace Browning',
     author_email='jacebrowning@gmail.com',
 

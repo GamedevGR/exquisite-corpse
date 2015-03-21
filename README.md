@@ -2,9 +2,9 @@ ExquisiteCorpse
 ===============
 A microgame runner.
 
-[![Build Status](http://img.shields.io/travis/GamedevGR/exquisite-corpse/master.svg)](https://travis-ci.org/GamedevGR/exquisite-corpse)
-[![Coverage Status](http://img.shields.io/coveralls/GamedevGR/exquisite-corpse/master.svg)](https://coveralls.io/r/GamedevGR/exquisite-corpse)
-[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/GamedevGR/exquisite-corpse.svg)](https://scrutinizer-ci.com/g/GamedevGR/exquisite-corpse/?branch=master)
+[![Build Status](http://img.shields.io/travis/jacebrowning/exquisite-corpse/master.svg)](https://travis-ci.org/jacebrowning/exquisite-corpse)
+[![Coverage Status](http://img.shields.io/coveralls/jacebrowning/exquisite-corpse/master.svg)](https://coveralls.io/r/jacebrowning/exquisite-corpse)
+[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/jacebrowning/exquisite-corpse.svg)](https://scrutinizer-ci.com/g/jacebrowning/exquisite-corpse/?branch=master)
 [![PyPI Version](http://img.shields.io/pypi/v/ExquisiteCorpse.svg)](https://pypi.python.org/pypi/ExquisiteCorpse)
 [![PyPI Downloads](http://img.shields.io/pypi/dm/ExquisiteCorpse.svg)](https://pypi.python.org/pypi/ExquisiteCorpse)
 
@@ -29,7 +29,7 @@ $ pip install ExquisiteCorpse
 or directly from the source code:
 
 ```
-$ git clone https://github.com/gamedevgr/exquisite-corpse.git
+$ git clone https://github.com/jacebrowning/exquisite-corpse.git
 $ cd exquisite-corpse
 $ python setup.py install
 ```
