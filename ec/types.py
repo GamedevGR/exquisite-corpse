@@ -3,10 +3,10 @@
 import yorm
 
 
-@yorm.attr(mac=yorm.standard.String)
-@yorm.attr(win=yorm.standard.String)
-@yorm.attr(nix=yorm.standard.String)
-class Instructions(yorm.extended.AttributeDictionary):
+@yorm.attr(mac=yorm.converters.String)
+@yorm.attr(win=yorm.converters.String)
+@yorm.attr(nix=yorm.converters.String)
+class Instructions(yorm.converters.AttributeDictionary):
 
     """Collection of OS-specific shell commands."""
 
@@ -17,11 +17,11 @@ class Instructions(yorm.extended.AttributeDictionary):
         self.nix = nix
 
 
-@yorm.attr(url=yorm.standard.String)
-@yorm.attr(rev=yorm.standard.String)
+@yorm.attr(url=yorm.converters.String)
+@yorm.attr(rev=yorm.converters.String)
 @yorm.attr(build=Instructions)
 @yorm.attr(run=Instructions)
-class Game(yorm.extended.AttributeDictionary):
+class Game(yorm.converters.AttributeDictionary):
 
     """Game's clone, build, and run instructions."""
 
@@ -40,7 +40,7 @@ class Game(yorm.extended.AttributeDictionary):
 
 
 @yorm.attr(all=Game)
-class Games(yorm.container.List):
+class Games(yorm.converters.List):
 
     """List of games."""
 
